@@ -7,6 +7,8 @@
 * 支持運行時增加自定義規則
 * 簡單快速
 
+[npm](https://www.npmjs.com/package/js-han)
+
 [js](https://github.com/lizongying/js-han)
 
 [python](https://github.com/lizongying/pyhan)
