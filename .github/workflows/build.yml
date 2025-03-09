@@ -45,8 +45,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./docs/zi.min.js
-          asset_name: zi-${{ github.ref_name }}.min.js
+          asset_path: ./docs/han.min.js
+          asset_name: han-${{ github.ref_name }}.min.js
           asset_content_type: application/javascript
 
   publish:
