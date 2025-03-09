@@ -1,0 +1,36 @@
+{
+  "name": "js-han",
+  "version": "0.0.1",
+  "description": "簡化字轉漢字，js實現",
+  "main": "docs/han.min.js",
+  "scripts": {
+    "build": "npx terser docs/han.js --comments 'https://github.com/lizongying/js-han' -o docs/han.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizongying/js-han.git"
+  },
+  "keywords": [
+    "漢字",
+    "汉字",
+    "簡化字",
+    "简化字",
+    "簡體字",
+    "简体字",
+    "正體字",
+    "正体字",
+    "繁體字",
+    "繁体字",
+    "hanzi",
+    "chinese"
+  ],
+  "author": "Li ZongYing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lizongying/js-han/issues"
+  },
+  "homepage": "https://github.com/lizongying/js-han#readme",
+  "devDependencies": {
+    "terser": "^5.30.3"
+  }
+}
