@@ -15,6 +15,8 @@
 
 [python](https://github.com/lizongying/pyhan)
 
+[rust](https://github.com/lizongying/rs-han)
+
 ![](screenshots/img.png)
 
 ## 使用
