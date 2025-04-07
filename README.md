@@ -35,7 +35,7 @@ package.json
 {
   "type": "module",
   "dependencies": {
-    "js-han": "^0.0.6"
+    "js-han": "^0.0.9"
   }
 }
 ```
@@ -72,8 +72,8 @@ console.log(han.toTraditional('头发'))
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>簡化字轉漢字</title>
-    <script type="module" src="https://lizongying.github.io/js-han/han.min.js"></script>
     <script type="module">
+        import Han from "https://lizongying.github.io/js-han/han.min.js";
         const hanInstance = Han.getInstance();
         console.log(hanInstance.toTraditional('汉字'));
     </script>
