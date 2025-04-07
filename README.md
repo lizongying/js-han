@@ -23,6 +23,8 @@
 
 ### node
 
+install
+
 ```
 npm i js-han
 ```
@@ -38,20 +40,39 @@ package.json
 }
 ```
 
+example
+
 ```js
 import Han from 'js-han'
+
+const hanInstance = Han.getInstance()
+
+// 蘿蔔
+console.log(hanInstance.toTraditional('萝卜'))
+
+// 胡卜
+console.log(hanInstance.toTraditional('胡卜'))
+
+// 胡蔔
+hanInstance.addRule('卜,蔔,-1|0|胡')
+console.log(hanInstance.toTraditional('胡卜'))
+
+const han = new Han()
+
+// 頭髮
+console.log(han.toTraditional('头发'))
 ```
 
 ### browser
 
 ```html
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-Hans">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>簡化字轉漢字</title>
-    <script src="raw.githubusercontent.com/lizongying/js-han/refs/heads/main/docs/han.min.js"></script>
+    <script src="https://raw.githubusercontent.com/lizongying/js-han/main/docs/han.min.js"></script>
     <script>
         const hanInstance = Han.getInstance();
         console.log(hanInstance.toTraditional('汉字'));

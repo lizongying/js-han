@@ -2624,12 +2624,6 @@ class Han {
     }
 }
 
-if (typeof process !== 'undefined') {
-    const hanInstance = Han.getInstance();
-    hanInstance.addRule('卜,蔔,-1|0|胡');
-    console.log(hanInstance.toTraditional('下台'));
-}
-
 export default Han;
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = Han;

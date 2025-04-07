@@ -5,7 +5,8 @@
   "type": "module",
   "main": "docs/han.min.js",
   "scripts": {
-    "build": "npx terser docs/han.js -o docs/han.min.js"
+    "test": "node src/test.js",
+    "build": "npx terser src/han.js -o docs/han.min.js"
   },
   "repository": {
     "type": "git",
