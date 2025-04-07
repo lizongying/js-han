@@ -27,6 +27,21 @@
 npm i js-han
 ```
 
+package.json
+
+```json
+{
+  "type": "module",
+  "dependencies": {
+    "js-han": "^0.0.6"
+  }
+}
+```
+
+```js
+import Han from 'js-han'
+```
+
 ### browser
 
 ```html
