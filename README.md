@@ -35,7 +35,7 @@ package.json
 {
   "type": "module",
   "dependencies": {
-    "js-han": "^0.0.9"
+    "js-han": "^0.0.10"
   }
 }
 ```
