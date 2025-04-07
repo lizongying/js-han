@@ -72,8 +72,8 @@ console.log(han.toTraditional('头发'))
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>簡化字轉漢字</title>
-    <script src="https://raw.githubusercontent.com/lizongying/js-han/main/docs/han.min.js"></script>
-    <script>
+    <script type="module" src="https://raw.githubusercontent.com/lizongying/js-han/main/docs/han.min.js"></script>
+    <script type="module">
         const hanInstance = Han.getInstance();
         console.log(hanInstance.toTraditional('汉字'));
     </script>
