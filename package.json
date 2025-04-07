@@ -6,7 +6,7 @@
   "main": "docs/han.min.js",
   "scripts": {
     "test": "node src/test.js",
-    "build": "npx terser src/han.js -o docs/han.min.js"
+    "build": "npx terser src/han.js --comments 'https://github.com/lizongying/js-han' -o docs/han.min.js"
   },
   "repository": {
     "type": "git",
