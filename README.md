@@ -26,7 +26,7 @@
 install
 
 ```
-npm i js-han
+npm i js-han@latest
 ```
 
 package.json
