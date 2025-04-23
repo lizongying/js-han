@@ -7,7 +7,7 @@ export default defineConfig({
             minify: true
         })
     ],
-    base: '/js_han/',
+    base: '/js-han/',
     build: {
         rollupOptions: {
             input: {
