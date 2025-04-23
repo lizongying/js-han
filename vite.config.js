@@ -12,6 +12,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 index: 'index.html',
+                han: 'src/han.js',
             },
             output: {
                 dir: 'docs',

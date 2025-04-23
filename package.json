@@ -1,6 +1,6 @@
 {
   "name": "js-han",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "簡化字轉漢字，js實現",
   "type": "module",
   "main": "dist/main.min.js",
