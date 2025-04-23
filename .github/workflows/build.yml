@@ -19,14 +19,16 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '23'
 
       - name: Install dependencies
-        run: npm install
+        run: yarn install
 
       - name: Compress JavaScript
         run: |
-          npx terser src/han.js --comments 'https://github.com/lizongying/js-han' -o docs/han.min.js
+          make sync_data
+          yarn run build
+          yarn run build_main
 
       - name: Create Release
         id: create_release
@@ -45,7 +47,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./docs/han.min.js
+          asset_path: ./dist/main.min.js
           asset_name: han-${{ github.ref_name }}.min.js
           asset_content_type: application/javascript
 
@@ -59,7 +61,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '23'
 
       - name: Login to npm
         run: npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
