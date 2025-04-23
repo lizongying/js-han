@@ -1,0 +1,3 @@
+[submodule "pyhan"]
+	path = pyhan
+	url = git@github.com:lizongying/pyhan.git

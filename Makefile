@@ -1,9 +1,10 @@
 .PHONY: all
 
-all: han
+all: sync_data
 
-han:
-	node docs/han.js
+sync_data:
+	@OUTPUT=$$(python pyhan/src/tool/han.py); \
+    echo "export const data = '$$OUTPUT'" > src/data.js
 
 pre-commit:
-	npm run build && git add -A .
+	yarn run build && yarn run build_main && git add -A .
